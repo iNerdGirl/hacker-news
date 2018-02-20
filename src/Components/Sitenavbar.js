@@ -13,13 +13,13 @@ const Sitenavbar = () => {
         </Navbar.Brand>
       </Navbar.Header>
       <Nav>
-        <NavItem eventKey={1} href="#">
+        <NavItem eventKey={1} href="/top">
           Top Stories
         </NavItem>
-        <NavItem eventKey={2} href="#">
+        <NavItem eventKey={2} href="/new">
           New Stories
         </NavItem>
-        <NavItem eventKey={3} href="#">
+        <NavItem eventKey={3} href="/best">
           Best Stories
         </NavItem>
       </Nav>
