@@ -9,7 +9,7 @@ const Sitenavbar = () => {
   return <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#">React Hacker News</a>
+          <a href="/">React Hacker News</a>
         </Navbar.Brand>
       </Navbar.Header>
       <Nav>
