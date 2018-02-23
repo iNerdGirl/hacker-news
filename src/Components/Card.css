@@ -1,4 +1,13 @@
+.panel-custom {
+  border: 1px solid black;
+  border-radius: 1%;
+}
+
 .panel-custom .panel-heading {
   background-color: orange;
-  border: 1px solid black;
+  border-radius: 1%;
+}
+
+.panel-custom .panel-body {
+  border-top: 2px solid black;
 }
