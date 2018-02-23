@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Sitenavbar from './Components/Sitenavbar';
+import Card from './Components/Card';
 import './App.css'
+import Footer from './Components/Footer';
 
 class BestStories extends Component {
   constructor(props){
@@ -27,15 +29,17 @@ class BestStories extends Component {
     let views = <div>Loading...</div>;
     const { stories } = this.state;
     if (stories && stories.length > 0) {
-      views = stories.map(s => <p key={s.id}>
-          <a href={s.url}>{s.title}</a> from <strong>{s.by}</strong>
-        </p>);
+      views = stories.map(s =>{
+        return (
+        <Card key={s.id} stories={s}/>
+      )});
     }
     return(
       <div className="App">
         <Sitenavbar />
-        <h1>Hacker News Best Stories</h1>
+        <h1>Best Stories</h1>
         {views}
+        <Footer />
       </div>
     );
   }
